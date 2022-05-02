@@ -9,9 +9,9 @@ function Routes()
     return(
         <BrowserRouter>
             <Switch>
-                <Route exact path="/login" component={Login}/>
-                <Route exact path="/cadastro" component={Cadastro}/>
-                <Route exact path="/home" component={Home}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/cadastro" component={Cadastro}/>
+                <Route path="/" component={Home}/>
             </Switch>
         </BrowserRouter>
     );
