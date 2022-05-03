@@ -1,29 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form , Button } from "react-bootstrap";
 import "./Login.css";
 
 function Login()
 {
+    
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+
+    function login()
+    {
+        if (email === "andrelamegobh@hotmail.com" && password === "deco")
+        {
+        alert("Bem vindo! " + email);
+        window.location.href = "/home";
+        }
+        else
+        {
+            alert("Dados incorretos!");
+        }
+    }
     return(
         <div className="base">
             <div className="container">
-<<<<<<< Updated upstream
-                <div>
-                    <img src="/images/Quick_Notes.png" alt="Quick Notes"/>
-                    <Form className="inputs">
-                        <Form.Group controlId="email">
-                            <Form.Control type="email" placeholder="E-mail" />
-                        </Form.Group>
-                        <Form.Group controlId="senha">
-                            <Form.Control type="password" placeholder="Senha" />
-                        </Form.Group>
-                        <Button variant="primary" type="login">
-                            Login
-                        </Button>
-                    </Form>
-                </div>
-                
-=======
                 <img className="mb-3" class name ="image" src="/images/Quick_Notes.png" alt="Quick Notes"/>
                 <Form className="inputs">
                     <Form.Group className="mb-3" controlId="email">
@@ -45,7 +44,6 @@ function Login()
                         Login
                     </Button>
                 </Form>
->>>>>>> Stashed changes
             </div>
         </div> 
     );
