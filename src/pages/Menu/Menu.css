@@ -1,0 +1,24 @@
+.list{
+    width: 260px;
+}
+
+.textHome{
+    margin-left: 16px;
+}
+
+.textProdutos{
+    margin-left: 16px;
+}
+
+.userName{
+    color: black;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 1.1rem;
+}
+
+.userConteiner{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
